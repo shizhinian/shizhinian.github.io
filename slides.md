@@ -3,7 +3,7 @@ theme: academic
 background: https://source.unsplash.com/collection/94734566/1920x1080
 class: text-left
 highlighter: shikiji
-lineNumbers: false
+lineNumbers: true
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.
@@ -102,13 +102,14 @@ image2: '色深.png'
 
 Slidev 旨在为开发者提供灵活性和交互性，通过使用他们已经熟悉的工具和技术，使他们的演示文稿更加有趣、更具表现力和吸引力。
 
+
 当使用所见即所得的编辑器时，人们很容易被样式选项所干扰。Slidev 通过分离内容和视觉效果来弥补这一点。这使你能够一次专注于一件事，同时也能够重复使用社区中的主题。Slidev 并不寻求完全取代其他幻灯片制作工具。相反，它专注于迎合开发者社区的需求。
 
 ---
 layout: 3-images-x
 image1: 'AMCL.png'
-image2: 'AMCL.png'
-image3: '恢复master分支.png'
+image2: '色深.png'
+image3: '人工势能法示意图.png'
 imageOrder: 2
 
 ---
@@ -122,25 +123,17 @@ layout: section
 
 ---
 # Lorem ipsum dolor sit 
+zheshiyiduanwenzi  
+zheshiyiduanwenzi  
+zheshiyiduanwenzi
+%%middle%%
 
-::middle::
+1  
+1  
+%%right%%
 
-## Dolore magna
-
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-
-## Dolore magna
-
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-
-::right::
-
-## Dolore magna
-
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-
-## Dolore magna
-
+2  
+2
 
 
 ---
@@ -148,6 +141,8 @@ layout: default
 
 ---
 # ssss
+## ddd
+### ddd
 
 ---
 layout: image-4-cols-1
@@ -159,17 +154,17 @@ image4: 江西理工.JPG
 ---
 # 4列图片加文字布局
 
-::text1::
+%%text1%%
 当使用所见即所得的编辑器时，人们很容易被样式选项所干扰。Slidev 通过分离内容和视觉效果来弥补这一点。这使你能够一次专注于一件事，同时也能够重复使用社区中的主题。Slidev 并不寻求完全取代其他幻灯片制作工具。相反，它专注于迎合开发者社区的需求。
-::text2::
-## ddd
+%%text2%%
+
 原始大小980 552  × 1.25  
 = 当前大小1225 690
 
-::text3::
+%%text3%%
 DCBG改正
 
-::text4::
+%%text4%%
 江西理工大学
 
 ---
@@ -203,6 +198,7 @@ your-slidev/
     />
   </Item>
 </BarBottom>
+
 ---
 transition: slide-left
 
@@ -429,67 +425,7 @@ Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
 </div>
 ```
 
-<div class="w-60 relative mt-6">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-square.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-circle.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-triangle.png"
-      alt=""
-    />
-  </div>
 
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 40, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn More](https://sli.dev/guide/animations.html#motion)
-
-</div>
 
 ---
 

@@ -21,7 +21,7 @@ const textAlignment = computed(()=>props.imageOrder===1?'text-right order-2 just
 </script>
 
 <template>
-    <div class="bg-red-400 slidev-layout h-full grid image-x" >
+    <div class="slidev-layout h-full grid image-x" >
         <div class = "my-auto flex">
             <div class="w-1/3 flex justify-center item-center p-0 max-h-md object-cover" :class="imageOrder">
                 <img :src="image1" class="rounded-2 border-image h-full object-cover"  />
@@ -30,7 +30,7 @@ const textAlignment = computed(()=>props.imageOrder===1?'text-right order-2 just
                 <img :src="image2" class="rounded-2 border-image h-full object-cover"  />
                 
             </div>
-            <div class="w-1/3 flex flex-col iten-center justify-center p-0 max-h-md object-cover" :class="textAlignment">
+            <div class="w-1/3 flex flex-col item-center justify-left p-0 max-h-md object-cover" :class="textAlignment">
             <slot />
             </div>
 

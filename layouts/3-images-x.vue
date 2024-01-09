@@ -25,17 +25,17 @@ const textAlignment = computed(()=>props.imageOrder===1?'text-left order-2 justi
 </script>
 
 <template>
-    <div class=" slidev-layout h-full grid px-12 pt-16 pd-8" >
+    <div class=" slidev-layout h-full grid px-12 pt-16 pd-8 " >
         <div class = "flex justify-center">
-            <div class=" w-1/2 flex flex-col justify-center item-center px-8  object-cover" :class="imageOrder">
-                <div class="bg-red-100 h-1/3">
+            <div class=" w-1/2 h-full flex flex-col justify-center item-center px-8  object-cover " :class="imageOrder">
+                <div class="bg-red-100 py-1 aspect-h-1/4">
                     <img :src="image1" class="rounded-2x1 border-image h-full object-contain shadow-xl"  />
                 </div>
-                <div class="bg-red-200 h-1/3">
+                <div class="bg-red-200 py-1 aspect-h-1/4">
                     <img :src="image2" class="rounded-2x1 border-image h-full object-contain shadow-xl"  />
                 </div>
-                <div class="bg-red-300 h-1/3 ">
-                    <img :src="image3" class="rounded-2x1 border-image h-full object-contain shadow-xl"  />
+                <div class="bg-red-300 py-1  flex justify-center aspect-h-1/3">
+                    <img :src="image3" class="rounded-2x1 border-image h-full object-contain shadow-xl  "  />
                 </div>
             </div>
             <div class=" w-1/2 flex flex-col justify-left" :class="textAlignment">
