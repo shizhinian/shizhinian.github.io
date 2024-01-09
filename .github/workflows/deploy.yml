@@ -30,7 +30,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build -- --base /the first slide/
+        run: npm run build -- --base /demo/
 
       - uses: actions/configure-pages@v3
 
