@@ -1,33 +1,36 @@
 .photo-container {
     flex: 1;
-    max-height: 33%;
     display: flex;
     flex-direction: column;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
 }
 
-.photo-container .img {
+.img {
     object-fit: contain;
     flex: 1;
     max-height: 90%;
-    border-radius: 0.5em;
 }
 
-.slidev-layout .background {
+.part_photo {
     max-height: 100%;
-    /* background-color: rgb(22, 175, 124); */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
 }
 
-.background .left {
-    /* max-height: 100%; */
-    height: 400px;
-    /* padding-left: 4em; */
+.part_text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 }
 
-.photo-container .figure-comment {
+.figure-comment {
     text-align: center;
     flex: 1;
     font-size: 10px;
-    padding: 0.5em;
-    /* background-color: azure; */
-    max-height: 10%;
+    padding-top: 0.25em;
+    height: 10%;
 }

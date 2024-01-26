@@ -1,0 +1,67 @@
+.slidev-layout .top {
+    max-height: 35%;
+    /* background: #d36666; */
+    height: 300px;
+}
+
+.down {
+    max-height: 65%;
+    display: flex;
+    flex-direction: column;
+    /* background: #d36666; */
+    /* 这个高度是有问题的，正常情况下层层传递下去，各组件高度会被限定死的，但是slidev-layout的高度被忽略了，没有起作用。 */
+    height: 500px;
+    /* justify-content: center; */
+
+}
+
+.down-up {
+    max-height: 50%;
+    /* height: 400px; */
+    flex: 1;
+    /* align-items: center; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.down-down {
+    max-height: 50%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    justify-content: center;
+    flex: 1;
+}
+
+.down-down .photo-container {
+    display: flex;
+    flex: 1;
+
+}
+
+.down-up .img1 {
+    /* max-height: 20%; */
+    /* height: 100px; */
+    height: 90%;
+    /* padding: 1em; */
+    flex: 1;
+    object-fit: contain;
+
+}
+
+.img2 {
+    /* flex: 1; */
+    max-height: 90%;
+    /* object-fit: contain; */
+}
+
+.down .figure-comment {
+    text-align: center;
+    flex: 1;
+    font-size: 10px;
+    padding: 0.5em;
+    /* background-color: azure; */
+    max-height: 10%;
+}
